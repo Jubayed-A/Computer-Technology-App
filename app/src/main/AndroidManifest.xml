@@ -16,7 +16,7 @@
             android:name=".LogInActivity"
             android:exported="false" />
         <activity
-            android:name=".SigUpAcitvity"
+            android:name=".SigUpActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
