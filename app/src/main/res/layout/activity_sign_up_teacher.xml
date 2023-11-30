@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".LogInActivity">
+    tools:context=".SignUpTeacher">
 
     <ImageView
         android:layout_width="100dp"
@@ -21,7 +20,7 @@
         android:layout_marginTop="16dp"
         android:text="Shaymoli Ideal Polytecnic Instituite"
         android:textAlignment="center"
-        android:textSize="40sp"/>
+        android:textSize="35sp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -29,15 +28,50 @@
         android:layout_marginTop="16dp"
         android:text="Computer Department"
         android:textAlignment="center"
-        android:textSize="14sp"/>
+        android:textSize="20sp"/>
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:hint="Email"
+        android:layout_marginTop="25dp"
+        android:hint="Name"
         app:endIconMode="clear_text"
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Name"
+        app:endIconMode="clear_text"
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Email"
         app:startIconDrawable="@drawable/mail"
+        app:endIconMode="clear_text"
         app:hintTextColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -53,10 +87,10 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:hint="Password"
-        app:hintTextColor="@color/black"
         app:startIconDrawable="@drawable/lock"
+        app:hintTextColor="@color/black"
         app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -69,37 +103,15 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:weightSum="2"
-        android:layout_marginTop="10dp"
-        >
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="35dp"
-            android:text="Teacher" />
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Student" />
-
-    </LinearLayout>
-
-
     <com.google.android.material.button.MaterialButton
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         android:layout_height="57dp"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:backgroundTint="#78d2a5"
-        android:text="Login"
-        android:textColor="#F7F9FA"
+        android:fontFamily="@font/lato"
+        android:text="Create Account"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:cornerRadius="10dp"
@@ -109,24 +121,14 @@
     </com.google.android.material.button.MaterialButton>
 
     <TextView
-        android:id="@+id/dontHaveAccountStudent"
+        android:id="@+id/haveAnAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Don't Have Account ? Student"
+        android:layout_marginTop="15dp"
+        android:text="Already Have An Account ?"
         android:textAlignment="center"
         android:textColor="#78d2a5"
         android:textSize="14sp"/>
-    <TextView
-        android:id="@+id/dontHaveAccountTeacher"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Don't Have Account ? Teacher"
-        android:textAlignment="center"
-        android:textColor="#78d2a5"
-        android:textSize="14sp"/>
-
 
 
 </LinearLayout>
