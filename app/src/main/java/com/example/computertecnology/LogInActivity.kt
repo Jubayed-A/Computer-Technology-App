@@ -10,14 +10,14 @@ class LogInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_in)
 
-        val sigUpStudent = findViewById<TextView>(R.id.dontHaveAccountStudent)
-        val sigUpTeacher = findViewById<TextView>(R.id.dontHaveAccountTeacher)
+        val signUpStudent = findViewById<TextView>(R.id.dontHaveAccountStudent)
+        val signUpTeacher = findViewById<TextView>(R.id.dontHaveAccountTeacher)
 
-        sigUpStudent.setOnClickListener {
+        signUpStudent.setOnClickListener {
             val intentSigUp = Intent(this, SigUpActivity::class.java)
             startActivity(intentSigUp)
         }
-        sigUpTeacher.setOnClickListener {
+        signUpTeacher.setOnClickListener {
             val intentSignUpTeacher = Intent(this, SignUpTeacher::class.java)
             startActivity(intentSignUpTeacher)
         }

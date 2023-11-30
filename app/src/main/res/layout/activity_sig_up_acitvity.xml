@@ -4,23 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".SigUpActivity">
+
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        android:src="@drawable/sipi_logo"/>
+        android:src="@drawable/sipi_logo" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Shaymoli Ideal Polytecnic Instituite"
+        android:text="@string/CollegeName"
         android:textAlignment="center"
-        android:textSize="35sp"/>
+        android:textSize="35sp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -28,42 +30,40 @@
         android:layout_marginTop="16dp"
         android:text="Computer Department"
         android:textAlignment="center"
-        android:textSize="20sp"/>
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="textStart"
-        android:textSize="16sp"
-        android:textColor="@color/textColor"
+        android:layout_marginTop="5dp"
         android:fontFamily="@font/lato_bold"
         android:text="Choose Your Semester"
-        android:layout_marginTop="5dp"
-        />
+        android:textAlignment="textStart"
+        android:textColor="@color/textColor"
+        android:textSize="16sp" />
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="57dp"
         android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
         app:boxStrokeWidth="0dp"
-        app:endIconTint="@color/black"
         app:boxStrokeWidthFocused="0dp"
-        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         app:endIconDrawable="@drawable/arrow_down"
-        android:layout_marginRight="2dp">
+        app:endIconTint="@color/black">
 
         <AutoCompleteTextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="none"
             android:fontFamily="@font/lato_bold"
-            android:text="Choose Semester">
+            android:inputType="none"
+            android:text="@string/choose_semester">
 
         </AutoCompleteTextView>
 
 
     </com.google.android.material.textfield.TextInputLayout>
-
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -87,7 +87,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:hint="Enter your Board Roll"
+        android:hint="@string/roll"
         app:endIconMode="clear_text"
         app:hintTextColor="@color/black">
 
@@ -106,8 +106,8 @@
         android:layout_marginTop="5dp"
         android:hint="Email"
         app:endIconMode="clear_text"
-        app:startIconDrawable="@drawable/mail"
-        app:hintTextColor="@color/black">
+        app:hintTextColor="@color/black"
+        app:startIconDrawable="@drawable/mail">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -123,10 +123,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:hint="Password"
-        app:startIconDrawable="@drawable/lock"
+        android:hint="@string/password"
         app:hintTextColor="@color/black"
-        app:passwordToggleEnabled="true">
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/lock">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -145,7 +145,7 @@
         android:layout_marginTop="16dp"
         android:backgroundTint="#78d2a5"
         android:fontFamily="@font/lato"
-        android:text="Create Account"
+        android:text="@string/create_account"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -160,10 +160,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Already Have An Account ?"
+        android:text="@string/already_have_an_account"
         android:textAlignment="center"
         android:textColor="#78d2a5"
-        android:textSize="14sp"/>
+        android:textSize="14sp" />
 
 
 </LinearLayout>

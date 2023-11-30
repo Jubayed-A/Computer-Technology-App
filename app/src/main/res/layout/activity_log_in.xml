@@ -9,36 +9,37 @@
     android:padding="20dp"
     tools:context=".LogInActivity">
 
+
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        android:src="@drawable/sipi_logo"/>
+        android:src="@drawable/sipi_logo" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Shaymoli Ideal Polytecnic Instituite"
+        android:text="@string/CollegeName"
         android:textAlignment="center"
-        android:textSize="40sp"/>
+        android:textSize="40sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Computer Department"
+        android:text="@string/computer_department"
         android:textAlignment="center"
-        android:textSize="14sp"/>
+        android:textSize="14sp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:hint="Email"
+        android:hint="@string/email"
         app:endIconMode="clear_text"
-        app:startIconDrawable="@drawable/mail"
-        app:hintTextColor="@color/black">
+        app:hintTextColor="@color/black"
+        app:startIconDrawable="@drawable/mail">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -54,10 +55,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="Password"
+        android:hint="@string/password"
         app:hintTextColor="@color/black"
-        app:startIconDrawable="@drawable/lock"
-        app:passwordToggleEnabled="true">
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/lock">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -72,22 +73,21 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:weightSum="2"
         android:layout_marginTop="10dp"
-        >
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="35dp"
-            android:text="Teacher" />
+            android:layout_marginEnd="35dp"
+            android:text="@string/teacher" />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Student" />
+            android:text="@string/student" />
 
     </LinearLayout>
 
@@ -98,7 +98,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:backgroundTint="#78d2a5"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="#F7F9FA"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -113,20 +113,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Don't Have Account ? Student"
+        android:text="@string/signUpStudent"
         android:textAlignment="center"
         android:textColor="#78d2a5"
-        android:textSize="14sp"/>
+        android:textSize="14sp" />
+
     <TextView
         android:id="@+id/dontHaveAccountTeacher"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Don't Have Account ? Teacher"
+        android:text="@string/signUpTeacher"
         android:textAlignment="center"
         android:textColor="#78d2a5"
-        android:textSize="14sp"/>
-
+        android:textSize="14sp" />
 
 
 </LinearLayout>
