@@ -63,12 +63,10 @@
                     android:layout_height="wrap_content"
                     android:text="Teacher Information"
                     android:textAlignment="center"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
-
             </LinearLayout>
-
 
         </androidx.cardview.widget.CardView>
 
@@ -97,9 +95,8 @@
                     android:layout_height="wrap_content"
                     android:text="Student Information"
                     android:textAlignment="center"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
-
 
             </LinearLayout>
 
@@ -144,12 +141,10 @@
                     android:layout_height="wrap_content"
                     android:text="Gallery"
                     android:textAlignment="center"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
-
             </LinearLayout>
-
 
         </androidx.cardview.widget.CardView>
 
@@ -178,12 +173,10 @@
                     android:layout_height="wrap_content"
                     android:text="Notice"
                     android:textAlignment="center"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
-
             </LinearLayout>
-
 
         </androidx.cardview.widget.CardView>
 
@@ -194,14 +187,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:orientation="horizontal">
-
+        android:orientation="horizontal"
+        android:weightSum="2">
 
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="100dp"
             android:layout_marginStart="2dp"
             android:layout_marginTop="2dp"
+            android:layout_marginEnd="25dp"
             android:layout_marginBottom="2dp"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp">
@@ -222,7 +216,7 @@
                     android:layout_height="wrap_content"
                     android:text="Lab"
                     android:textAlignment="center"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
