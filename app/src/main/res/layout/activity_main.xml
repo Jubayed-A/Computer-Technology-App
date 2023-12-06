@@ -8,12 +8,12 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
+<!--logo image -->
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="220dp"
         android:src="@drawable/logo" />
-
+<!--welcome text-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
-
+<!--first section-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -104,7 +104,7 @@
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
-
+    <!--second section-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -181,7 +181,7 @@
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
-
+    <!--third section-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -214,7 +214,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Lab"
+                    android:text="Laboratory"
                     android:textAlignment="center"
                     android:textSize="20sp"
                     android:textStyle="bold" />
