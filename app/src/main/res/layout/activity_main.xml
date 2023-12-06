@@ -54,14 +54,14 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/add" />
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/teacher" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Hello"
+                    android:text="Teacher Information"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -88,14 +88,14 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/add" />
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/student" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Hello "
+                    android:text="Student Information"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -135,14 +135,14 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/add" />
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/gallery" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Hello "
+                    android:text="Gallery"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -169,14 +169,14 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/add" />
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/notice" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Hello "
+                    android:text="Notice"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -194,43 +194,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:weightSum="2">
+        android:orientation="horizontal">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="2dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginBottom="2dp"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/add" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Hello "
-                    android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-
-            </LinearLayout>
-
-
-        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
@@ -248,14 +213,14 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/add" />
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/lab" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Hello "
+                    android:text="Lab"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />
