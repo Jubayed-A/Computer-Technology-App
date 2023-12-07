@@ -39,7 +39,7 @@
             android:name=".LogInActivity"
             android:exported="false" />
         <activity
-            android:name=".SigUpActivity"
+            android:name=".Student_Add"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -14,7 +14,7 @@ class LogInActivity : AppCompatActivity() {
         val signUpTeacher = findViewById<TextView>(R.id.dontHaveAccountTeacher)
 
         signUpStudent.setOnClickListener {
-            val intentSigUp = Intent(this, SigUpActivity::class.java)
+            val intentSigUp = Intent(this, Student_Add::class.java)
             startActivity(intentSigUp)
         }
         signUpTeacher.setOnClickListener {

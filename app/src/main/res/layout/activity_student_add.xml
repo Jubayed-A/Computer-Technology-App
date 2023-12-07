@@ -7,7 +7,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".SigUpActivity">
+    tools:context=".Student_Add">
 
 
     <ImageView
@@ -24,14 +24,6 @@
         android:textAlignment="center"
         android:textSize="35sp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="5dp"
-        android:text="Computer Department"
-        android:textAlignment="center"
-        android:textSize="20sp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -156,15 +148,6 @@
 
     </com.google.android.material.button.MaterialButton>
 
-    <TextView
-        android:id="@+id/haveAnAccount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="@string/already_have_an_account"
-        android:textAlignment="center"
-        android:textColor="#78d2a5"
-        android:textSize="14sp" />
 
 
 </LinearLayout>
