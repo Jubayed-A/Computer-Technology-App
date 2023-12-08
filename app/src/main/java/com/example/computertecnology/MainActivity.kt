@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity() {
 
         // teacher section
         teacher.setOnClickListener {
-            val intentLog  = Intent(this, LogInActivity::class.java)
-            startActivity(intentLog)
+            val intentTeacher  = Intent(this, TeacherActivity::class.java)
+            startActivity(intentTeacher)
         }
 
         // student section

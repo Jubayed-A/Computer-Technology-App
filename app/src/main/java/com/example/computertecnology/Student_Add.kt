@@ -11,5 +11,6 @@ class Student_Add : AppCompatActivity() {
         setContentView(R.layout.activity_student_add)
 
 
+
     }
 }

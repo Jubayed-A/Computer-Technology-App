@@ -22,7 +22,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/CollegeName"
         android:textAlignment="center"
-        android:textSize="35sp" />
+        android:textSize="30sp" />
 
 
     <TextView
@@ -64,6 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:hint="Name"
+        app:startIconDrawable="@drawable/person_icon"
         app:endIconMode="clear_text"
         app:hintTextColor="@color/black">
 
@@ -81,6 +82,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:hint="@string/roll"
+        app:startIconDrawable="@drawable/board_roll_icon"
         app:endIconMode="clear_text"
         app:hintTextColor="@color/black">
 
@@ -97,15 +99,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:hint="Email"
+        android:hint="Section"
         app:endIconMode="clear_text"
         app:hintTextColor="@color/black"
-        app:startIconDrawable="@drawable/mail">
+        app:startIconDrawable="@drawable/section_icon">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="textEmailAddress"
+            android:inputType="text"
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Department"
+        app:endIconMode="clear_text"
+        app:hintTextColor="@color/black"
+        app:startIconDrawable="@drawable/department_icon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
             android:textColor="@color/black">
 
         </com.google.android.material.textfield.TextInputEditText>
@@ -116,15 +136,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:hint="@string/password"
+        android:hint="Phone Number"
         app:hintTextColor="@color/black"
         app:passwordToggleEnabled="true"
-        app:startIconDrawable="@drawable/lock">
+        app:startIconDrawable="@drawable/phone_icon">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="textPassword"
+            android:inputType="phone"
             android:textColor="@color/black">
 
         </com.google.android.material.textfield.TextInputEditText>
@@ -138,7 +158,7 @@
         android:layout_marginTop="16dp"
         android:backgroundTint="#78d2a5"
         android:fontFamily="@font/lato"
-        android:text="@string/create_account"
+        android:text="Add Student"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"

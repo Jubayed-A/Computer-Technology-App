@@ -50,16 +50,16 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
+                    android:id="@+id/studentInfo"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="160dp"
                         android:layout_margin="5dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/sample_img"
+                        android:src="@drawable/person_icon"
                         app:shapeAppearanceOverlay="@style/SoftCorner" />
 
                     <TextView
@@ -84,10 +84,10 @@
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="160dp"
                         android:layout_margin="5dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/sample_img"
+                        android:src="@drawable/person_add_icon"
                         app:shapeAppearanceOverlay="@style/SoftCorner" />
 
                     <TextView
@@ -118,10 +118,10 @@
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="160dp"
                         android:layout_margin="5dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/sample_img"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/update_icon"
                         app:shapeAppearanceOverlay="@style/SoftCorner" />
 
                     <TextView
@@ -144,10 +144,10 @@
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="160dp"
                         android:layout_margin="5dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/sample_img"
+                        android:src="@drawable/person_remove_icon"
                         app:shapeAppearanceOverlay="@style/SoftCorner" />
 
                     <TextView

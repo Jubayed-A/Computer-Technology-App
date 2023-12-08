@@ -55,11 +55,11 @@
                     android:orientation="vertical">
 
                     <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="160dp"
                         android:layout_margin="5dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/sample_img"
+                        android:src="@drawable/computer_lab_icon"
                         app:shapeAppearanceOverlay="@style/SoftCorner" />
 
 
@@ -83,10 +83,10 @@
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="160dp"
                         android:layout_margin="5dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/sample_img"
+                        android:src="@drawable/science_lab_icon"
                         app:shapeAppearanceOverlay="@style/SoftCorner" />
 
                     <TextView
@@ -116,10 +116,10 @@
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="160dp"
                         android:layout_margin="5dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/sample_img"
+                        android:src="@drawable/elctrical2_lab_icon"
                         app:shapeAppearanceOverlay="@style/SoftCorner" />
 
                     <TextView
@@ -142,10 +142,10 @@
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="160dp"
                         android:layout_margin="5dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/sample_img"
+                        android:src="@drawable/other_lab_icon"
                         app:shapeAppearanceOverlay="@style/SoftCorner" />
 
                     <TextView
@@ -166,5 +166,6 @@
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

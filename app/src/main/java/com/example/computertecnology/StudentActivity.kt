@@ -12,10 +12,16 @@ class StudentActivity : AppCompatActivity() {
         setContentView(R.layout.activity_student)
 
         val studentAdd = findViewById<LinearLayout>(R.id.addStudent)
+        val studentInfo = findViewById<LinearLayout>(R.id.studentInfo)
 
         studentAdd.setOnClickListener {
             val intentAdd = Intent(this, Student_Add::class.java)
             startActivity(intentAdd)
+        }
+
+        studentInfo.setOnClickListener {
+            val intentInfo = Intent(this, StudentInformation::class.java)
+            startActivity(intentInfo)
         }
 
     }
