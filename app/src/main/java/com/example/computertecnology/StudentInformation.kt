@@ -1,71 +1,64 @@
 package com.example.computertecnology
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.computertecnology.TeacherAdapter.onItemClickListener
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 
 class StudentInformation : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
-    private lateinit var studentArrayList: ArrayList<Data>
+    private lateinit var studentArrayList: ArrayList<StdData>
+    private lateinit var databaseReference: DatabaseReference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_student_information)
 
         recyclerView = findViewById(R.id.studentRecyclerView)
+        studentArrayList = ArrayList()
 
-        // student image declare
-        val studentImgArray = arrayOf(
-            R.drawable.sample_img,
-            R.drawable.img2
-        )
 
-        // student name declare
-        val studentNameArray = arrayOf(
-            "Sahinur Islam Sahin",
-            "Polash Chandro Bisswas"
-        )
+        // data from database
 
-        // student prof declare
-        val studentProfArray = arrayOf(
-            "Chief Instructor(CI)",
-            "Senior Instructor"
-        )
+        databaseReference = FirebaseDatabase.getInstance().getReference("Users")
 
-        // student description
-        val studentDescriptionArray = arrayOf(
-            "Shahinur islam shain is Chief instructor of computer department ",
-            "Plolas Chondro Biswas is a Senior Instructor of computer department"
-        )
+        // get data form firebase
+        databaseReference.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                studentArrayList.clear()
+                for (dataSnapshot in snapshot.children) {
+                    val name = dataSnapshot.child("name").getValue(String::class.java) ?: ""
+                    val roll = dataSnapshot.child("roll").getValue(String::class.java) ?: ""
+                    val section = dataSnapshot.child("section").getValue(String::class.java) ?: ""
+                    val department =
+                        dataSnapshot.child("department").getValue(String::class.java) ?: ""
+                    val semester = dataSnapshot.child("semester").getValue(String::class.java) ?: ""
+                    val phone = dataSnapshot.child("phone").getValue(String::class.java) ?: ""
 
-        // to set behave of item inside recyclerview
-        // layout manager
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        // initialized teacher array list
-        studentArrayList = arrayListOf<Data>()
+                    val users = StdData(name, roll, section, department, semester, phone)
+                    studentArrayList.add(users)
+                }
 
-        // add all data one by one to teacherArrayList
-        for (index in studentImgArray.indices){
-            val teacher = Data(studentNameArray[index], studentImgArray[index], studentProfArray[index], studentDescriptionArray[index])
-            studentArrayList.add(teacher)
-        }
 
-        // adapter code here
-        val studentAdapter = StudentAdapter(studentArrayList, this)
-        recyclerView.adapter = studentAdapter
+                // set adapter after get data from database
+                val studentAdapter = StudentAdapter(studentArrayList, this@StudentInformation)
+                recyclerView.adapter = studentAdapter
 
-        // click on each teacher
-        studentAdapter.setOnItemClickListener(object : StudentAdapter.onItemClickListener{
-            override fun onItemClicking(position: Int) {
-                // on clicking each teacher what action do you want to perform
-                val intentStudentProfile = Intent(this@StudentInformation, StudentProfile::class.java)
-                intentStudentProfile.putExtra("name", studentArrayList[position].name)
-                intentStudentProfile.putExtra("description", studentArrayList[position].description)
-                intentStudentProfile.putExtra("image", studentArrayList[position].image)
-                startActivity(intentStudentProfile)
+                // set layout-manager to call data for // to set behave of item inside recyclerview
+                recyclerView.layoutManager = LinearLayoutManager(this@StudentInformation)
+
+            }
+
+            // error handling
+            override fun onCancelled(error: DatabaseError) {
+                Toast.makeText(this@StudentInformation, "Database Error", Toast.LENGTH_SHORT).show()
             }
 
         })

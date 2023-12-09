@@ -8,31 +8,18 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.imageview.ShapeableImageView
 
-class StudentAdapter(private var studentArrayList: ArrayList<Data>, var context: Activity) :
+class StudentAdapter(private var studentArrayList: ArrayList<StdData>, var context: Activity) :
     RecyclerView.Adapter<StudentAdapter.StudentViewHolder>() {
 
-    private lateinit var studentListener: onItemClickListener
-
-    interface onItemClickListener {
-        fun onItemClicking(position: Int)
-    }
-
-    fun setOnItemClickListener(listener: StudentAdapter.onItemClickListener) {
-        studentListener = listener
-    }
-
     // student view holder
-    class StudentViewHolder(studentView: View, listener: onItemClickListener) :
+    class StudentViewHolder(studentView: View) :
         RecyclerView.ViewHolder(studentView) {
-        val sName = studentView.findViewById<TextView>(R.id.personName)
-        val sProf = studentView.findViewById<TextView>(R.id.personProf)
-        val sImage = studentView.findViewById<ShapeableImageView>(R.id.imageProfile)
-
-        init {
-            studentView.setOnClickListener {
-                listener.onItemClicking(adapterPosition)
-            }
-        }
+        val sName = studentView.findViewById<TextView>(R.id.stdName)
+        val sRoll = studentView.findViewById<TextView>(R.id.stdRoll)
+        val sSection = studentView.findViewById<TextView>(R.id.stdSection)
+        val sDepartment = studentView.findViewById<TextView>(R.id.stdDepartment)
+        val sSemester = studentView.findViewById<TextView>(R.id.stdSemester)
+        val sPhone = studentView.findViewById<TextView>(R.id.stdPhone)
 
     }
 
@@ -40,8 +27,8 @@ class StudentAdapter(private var studentArrayList: ArrayList<Data>, var context:
     // when layout manager fails to find a suitable view for each item
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StudentViewHolder {
         val studentView =
-            LayoutInflater.from(parent.context).inflate(R.layout.custom_card_view, parent, false)
-        return StudentViewHolder(studentView, studentListener)
+            LayoutInflater.from(parent.context).inflate(R.layout.custom_student_view, parent, false)
+        return StudentViewHolder(studentView)
     }
 
     // how many item are there in teacherArrayList
@@ -52,8 +39,11 @@ class StudentAdapter(private var studentArrayList: ArrayList<Data>, var context:
     override fun onBindViewHolder(holder: StudentViewHolder, position: Int) {
         val currentStudent = studentArrayList[position]
         holder.sName.text = currentStudent.name
-        holder.sProf.text = currentStudent.prof
-        holder.sImage.setImageResource(currentStudent.image)
+        holder.sRoll.text = currentStudent.roll
+        holder.sSection.text = currentStudent.section
+        holder.sDepartment.text = currentStudent.department
+        holder.sSemester.text = currentStudent.semester
+        holder.sPhone.text = currentStudent.phone
     }
 
 }
