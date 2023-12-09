@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "361016294415",
+    "project_id": "computer-tecnology",
+    "storage_bucket": "computer-tecnology.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361016294415:android:ba7335f5ab6bc991a7377a",
+        "android_client_info": {
+          "package_name": "com.example.computertecnology"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2pX1wU5dO4itIez_I1LAK_S5XDdjQ2uw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
