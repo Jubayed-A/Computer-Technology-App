@@ -130,7 +130,6 @@
         android:layout_marginTop="5dp"
         android:hint="Phone Number"
         app:hintTextColor="@color/black"
-        app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/phone_icon">
 
         <com.google.android.material.textfield.TextInputEditText

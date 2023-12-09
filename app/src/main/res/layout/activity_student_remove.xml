@@ -4,30 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".StudentRemove">
 
-
+    <!--computer logo code here-->
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
+        android:layout_marginTop="70dp"
         android:src="@drawable/sipi_logo" />
 
+    <!--    welcome text code here-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="30dp"
         android:text="@string/CollegeName"
         android:textAlignment="center"
         android:textSize="30sp" />
 
+    <!--    board roll code here-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="70dp"
         android:fontFamily="@font/lato_bold"
         android:text="Enter Your BoardRoll"
         android:textAlignment="textStart"
@@ -52,13 +54,14 @@
 
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
+
     <!--    Button code here -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/removeStudent"
         android:layout_width="200dp"
         android:layout_height="57dp"
         android:layout_gravity="center"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="26dp"
         android:backgroundTint="#78d2a5"
         android:fontFamily="@font/lato"
         android:text="Remove Student"
