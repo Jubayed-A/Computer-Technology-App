@@ -18,31 +18,35 @@ class GalleryActivity : AppCompatActivity() {
 
         // notice image declare
         val galleryImageArray = arrayOf(
-            R.drawable.sample_img,
-            R.drawable.img2,
-            R.drawable.add,
-            R.drawable.person_add_icon,
-            R.drawable.computer2_lab_icon,
-            R.drawable.science_lab2_icon
+            R.drawable.lab1,
+            R.drawable.lab2,
+            R.drawable.lab3,
+            R.drawable.lab4,
+            R.drawable.lab5,
+            R.drawable.lab6,
+            R.drawable.lab7,
+            R.drawable.lab8,
+            R.drawable.lab9,
+            R.drawable.lab10,
+            R.drawable.lab11,
+            R.drawable.lab12,
         )
 
         // to set behave of item inside recyclerview
         // layout manager
         recyclerView.layoutManager = LinearLayoutManager(this)
-        // initialized teacher array list
+        // initialized gallery array list
         galleryArrayList = arrayListOf<Gallery>()
 
         // add all data one by one to galleryArrayList
-        for (index in galleryImageArray.indices){
+        for (index in galleryImageArray.indices) {
             val gallery = Gallery(galleryImageArray[index])
             galleryArrayList.add(gallery)
         }
 
-
-        // adapter code here
+        // for gallery adapter code here
         val galleryAdapter = GalleryAdapter(galleryArrayList, this)
         recyclerView.adapter = galleryAdapter
-
 
     }
 }

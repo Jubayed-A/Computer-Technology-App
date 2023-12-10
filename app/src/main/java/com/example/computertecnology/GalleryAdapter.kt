@@ -8,11 +8,11 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 
-class GalleryAdapter (private var galleryArrayList: ArrayList<Gallery>, var context: Activity) :
+class GalleryAdapter(private var galleryArrayList: ArrayList<Gallery>, var context: Activity) :
     RecyclerView.Adapter<GalleryAdapter.GalleryViewHolder>() {
 
     // galleryViewHolder code here
-    class GalleryViewHolder (galleryView : View) : RecyclerView.ViewHolder(galleryView){
+    class GalleryViewHolder(galleryView: View) : RecyclerView.ViewHolder(galleryView) {
 
         val gImg = galleryView.findViewById<ImageView>(R.id.img2)
     }
