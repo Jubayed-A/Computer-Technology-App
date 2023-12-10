@@ -22,8 +22,8 @@ class NoticeAdapter(private var noticeArrayList: ArrayList<Data>, var context: A
 
     class NoticeViewHolder(noticeView: View, listener: onItemClickListener) :
         RecyclerView.ViewHolder(noticeView) {
-        val nName = noticeView.findViewById<TextView>(R.id.personName)
-        val nImage = noticeView.findViewById<ShapeableImageView>(R.id.imageProfile)
+        val nName = noticeView.findViewById<TextView>(R.id.noticeTitle)
+        val nImage = noticeView.findViewById<ShapeableImageView>(R.id.noticeImg)
 
         init {
             noticeView.setOnClickListener {
@@ -36,7 +36,7 @@ class NoticeAdapter(private var noticeArrayList: ArrayList<Data>, var context: A
     // when layout manager fails to find a suitable view for each item
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoticeViewHolder {
         val noticeView =
-            LayoutInflater.from(parent.context).inflate(R.layout.custom_card_view, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.custom_notice_view, parent, false)
         return NoticeViewHolder(noticeView, noticeListener)
     }
 
