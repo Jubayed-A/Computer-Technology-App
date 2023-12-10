@@ -13,6 +13,18 @@
         android:theme="@style/Theme.ComputerTecnology"
         tools:targetApi="31">
         <activity
+            android:name=".OthersLab"
+            android:exported="false" />
+        <activity
+            android:name=".ElectricLab"
+            android:exported="false" />
+        <activity
+            android:name=".ScienceLab"
+            android:exported="false" />
+        <activity
+            android:name=".ComputerLab"
+            android:exported="false" />
+        <activity
             android:name=".StudentRemove"
             android:exported="false" />
         <activity

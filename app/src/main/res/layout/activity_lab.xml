@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,11 +14,11 @@
         android:layout_margin="10dp"
         app:cardCornerRadius="15dp"
         app:cardElevation="10dp"
-        app:strokeColor="#673AB7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#673AB7">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,16 +31,15 @@
                 android:id="@+id/welcomeTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:padding="15dp"
                 android:layout_marginBottom="40dp"
+                android:gravity="center"
+                android:padding="15dp"
                 android:text="Welcome to Laboratory"
                 android:textSize="28sp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,6 +47,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
+                    android:id="@+id/computerLab"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -66,16 +65,16 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
                         android:gravity="center"
                         android:text="Computer Lab"
                         android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:layout_margin="5dp"
-                        />
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/scienceLab"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -92,12 +91,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
                         android:gravity="center"
                         android:text="Science Lab"
                         android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:layout_margin="5dp"
-                        />
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -109,6 +107,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
+                    android:id="@+id/electricLab"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -125,16 +124,16 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
                         android:gravity="center"
                         android:text="Electric Lab"
                         android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:layout_margin="5dp"
-                        />
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/othersLab"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -151,12 +150,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
                         android:gravity="center"
                         android:text="Others"
                         android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:layout_margin="5dp"
-                        />
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
