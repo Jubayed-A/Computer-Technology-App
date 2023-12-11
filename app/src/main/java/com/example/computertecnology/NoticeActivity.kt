@@ -15,6 +15,7 @@ class NoticeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_notice)
 
+        // recyclerView declare
         recyclerView = findViewById(R.id.noticeRecyclerView)
 
         // notice image declare
