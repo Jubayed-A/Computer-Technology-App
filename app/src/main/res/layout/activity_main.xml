@@ -123,7 +123,7 @@
             android:id="@+id/galleryCardView"
             android:layout_width="150dp"
             android:layout_height="100dp"
-            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
             android:layout_marginTop="2dp"
             android:layout_marginEnd="25dp"
             android:layout_marginBottom="2dp"
@@ -223,6 +223,40 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Laboratory"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/welcomeToUser"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/lab" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome"
                     android:textAlignment="center"
                     android:textSize="20sp"
                     android:textStyle="bold" />

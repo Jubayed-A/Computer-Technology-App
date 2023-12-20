@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ComputerTecnology"
         tools:targetApi="31">
         <activity
+            android:name=".welcome.WelcomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".OthersLab"
             android:exported="false" />
         <activity

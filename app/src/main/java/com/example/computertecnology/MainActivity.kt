@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import androidx.cardview.widget.CardView
+import com.example.computertecnology.welcome.WelcomeActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         val gallery = findViewById<CardView>(R.id.galleryCardView)
         val notice = findViewById<CardView>(R.id.noticeCardView)
         val lab = findViewById<CardView>(R.id.labCardView)
+        val welcome = findViewById<CardView>(R.id.welcomeToUser)
 
         // teacher section
         teacher.setOnClickListener {
@@ -44,6 +46,12 @@ class MainActivity : AppCompatActivity() {
         lab.setOnClickListener {
             val intentLab = Intent(this, LabActivity::class.java)
             startActivity(intentLab)
+        }
+
+        // welcome section
+        welcome.setOnClickListener {
+            val intentWelcome = Intent(this, WelcomeActivity::class.java)
+            startActivity(intentWelcome)
         }
 
 

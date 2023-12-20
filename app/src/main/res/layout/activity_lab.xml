@@ -67,7 +67,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:gravity="center"
-                        android:text="Computer Lab"
+                        android:text="Programming Lab"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -93,7 +93,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:gravity="center"
-                        android:text="Science Lab"
+                        android:text="Database Lab"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -126,7 +126,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:gravity="center"
-                        android:text="Electric Lab"
+                        android:text="Networking Lab"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -152,7 +152,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:gravity="center"
-                        android:text="Others"
+                        android:text="Hardware Lab"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
