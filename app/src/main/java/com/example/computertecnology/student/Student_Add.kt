@@ -1,4 +1,4 @@
-package com.example.computertecnology
+package com.example.computertecnology.student
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,6 +6,8 @@ import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.EditText
 import android.widget.Toast
+import com.example.computertecnology.R
+import com.example.computertecnology.Users
 import com.google.android.material.button.MaterialButton
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -13,12 +15,12 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
-class StudentUpdate : AppCompatActivity() {
+class Student_Add : AppCompatActivity() {
 
-    private lateinit var databaseReference: DatabaseReference
+    private lateinit var database: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_student_update)
+        setContentView(R.layout.activity_student_add)
 
         // semester text code here
         val semester = arrayOf(
@@ -27,16 +29,15 @@ class StudentUpdate : AppCompatActivity() {
         )
 
         val arrayAdapter = ArrayAdapter(this, R.layout.drop_down_item, semester)
-        val selectSemester = findViewById<AutoCompleteTextView>(R.id.itemSemester)
-        selectSemester.setAdapter(arrayAdapter)
+        val semesterList = findViewById<AutoCompleteTextView>(R.id.autoItem)
+        semesterList.setAdapter(arrayAdapter)
 
-        selectSemester.setOnItemClickListener { parent, view, position, id ->
-            Toast.makeText(this, selectSemester.text, Toast.LENGTH_SHORT).show()
+        semesterList.setOnItemClickListener { parent, view, position, id ->
+            Toast.makeText(this, semesterList.text, Toast.LENGTH_SHORT).show()
         }
 
-
         // student add code here
-        val addingStudent = findViewById<MaterialButton>(R.id.studentUpdate)
+        val addingStudent = findViewById<MaterialButton>(R.id.studentAdd)
         val name = findViewById<EditText>(R.id.stdName)
         val roll = findViewById<EditText>(R.id.stdRoll)
         val section = findViewById<EditText>(R.id.stdSection)
@@ -50,21 +51,30 @@ class StudentUpdate : AppCompatActivity() {
             val sSection = section.text.toString().trim()
             val sDepartment = department.text.toString().trim()
             val sPhone = phone.text.toString().trim()
-            val sSemester = selectSemester.text.toString().trim()
+            val sSemester = semesterList.text.toString().trim()
             val defaultSemesterText = "Choose Semester"
 
-            // update user on database
+
+            // check user exit or not
+
             if (sName.isNotEmpty() && sRoll.isNotEmpty() && sSection.isNotEmpty() && sDepartment.isNotEmpty()
-                && sPhone.isNotEmpty()
-            ) {
+                && sPhone.isNotEmpty()) {
                 // All fields are filled, perform your action here
                 if (sSemester != defaultSemesterText) {
-                    databaseReference = FirebaseDatabase.getInstance().getReference("Users")
-                    databaseReference.child(sRoll)
+
+
+                    database = FirebaseDatabase.getInstance().getReference("Users")
+                    database.child(sRoll)
                         .addListenerForSingleValueEvent(object : ValueEventListener {
                             override fun onDataChange(snapshot: DataSnapshot) {
                                 if (snapshot.exists()) {
-                                    // user exit with same roll number
+                                    // user with same roll number already exits
+                                    Toast.makeText(
+                                        this@Student_Add,
+                                        "User already registered with same Board Roll.",
+                                        Toast.LENGTH_LONG
+                                    ).show()
+                                } else {
                                     val user = Users(
                                         sName,
                                         sRoll,
@@ -73,47 +83,38 @@ class StudentUpdate : AppCompatActivity() {
                                         sSemester,
                                         sPhone
                                     )
-                                    databaseReference.child(sRoll).setValue(user)
-                                        .addOnSuccessListener {
-                                            name.text.clear()
-                                            roll.text.clear()
-                                            section.text.clear()
-                                            department.text.clear()
-                                            selectSemester.setText(defaultSemesterText)
-                                            phone.text.clear()
-                                            name.requestFocus()
-                                            Toast.makeText(
-                                                this@StudentUpdate,
-                                                "User Update Successfully",
-                                                Toast.LENGTH_SHORT
-                                            ).show()
-                                        }.addOnFailureListener {
-                                            Toast.makeText(
-                                                this@StudentUpdate,
-                                                "User Update Failed",
-                                                Toast.LENGTH_SHORT
-                                            ).show()
-                                        }
-                                } else {
-                                    // user doesn't exist
-                                    Toast.makeText(
-                                        this@StudentUpdate,
-                                        "User Not Registered",
-                                        Toast.LENGTH_SHORT
-                                    ).show()
+                                    database.child(sRoll).setValue(user).addOnSuccessListener {
+                                        name.text.clear()
+                                        roll.text.clear()
+                                        section.text.clear()
+                                        department.text.clear()
+                                        semesterList.setText(defaultSemesterText)
+                                        phone.text.clear()
+                                        name.requestFocus()
+                                        Toast.makeText(
+                                            this@Student_Add,
+                                            "User Registered",
+                                            Toast.LENGTH_SHORT
+                                        ).show()
+                                    }.addOnFailureListener {
+                                        Toast.makeText(
+                                            this@Student_Add,
+                                            "User Registered Failed",
+                                            Toast.LENGTH_SHORT
+                                        ).show()
+                                    }
                                 }
                             }
 
-                            // error handling
                             override fun onCancelled(error: DatabaseError) {
                                 Toast.makeText(
-                                    this@StudentUpdate,
-                                    "Database Error",
+                                    this@Student_Add,
+                                    "Database Error.",
                                     Toast.LENGTH_SHORT
                                 ).show()
                             }
                         })
-                    // semester not selected
+//                    Toast.makeText(this, "This feature will be developed.", Toast.LENGTH_SHORT).show()
                 } else {
                     Toast.makeText(this, "Please select a semester.", Toast.LENGTH_SHORT).show()
                 }

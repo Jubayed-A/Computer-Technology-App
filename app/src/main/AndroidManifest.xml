@@ -16,49 +16,49 @@
             android:name=".welcome.WelcomeActivity"
             android:exported="false" />
         <activity
-            android:name=".OthersLab"
+            android:name=".lab.OthersLab"
             android:exported="false" />
         <activity
-            android:name=".ElectricLab"
+            android:name=".lab.ElectricLab"
             android:exported="false" />
         <activity
-            android:name=".ScienceLab"
+            android:name=".lab.ScienceLab"
             android:exported="false" />
         <activity
-            android:name=".ComputerLab"
+            android:name=".lab.ComputerLab"
             android:exported="false" />
         <activity
-            android:name=".StudentRemove"
+            android:name=".student.StudentRemove"
             android:exported="false" />
         <activity
-            android:name=".StudentUpdate"
+            android:name=".student.StudentUpdate"
             android:exported="false" />
         <activity
-            android:name=".NoticeDetails"
+            android:name=".notice.NoticeDetails"
             android:exported="false" />
         <activity
-            android:name=".StudentProfile"
+            android:name=".student.StudentProfile"
             android:exported="false" />
         <activity
-            android:name=".TeacherProfile"
+            android:name=".teacher.TeacherProfile"
             android:exported="false" />
         <activity
-            android:name=".StudentInformation"
+            android:name=".student.StudentInformation"
             android:exported="false" />
         <activity
-            android:name=".LabActivity"
+            android:name=".lab.LabActivity"
             android:exported="false" />
         <activity
-            android:name=".NoticeActivity"
+            android:name=".notice.NoticeActivity"
             android:exported="false" />
         <activity
-            android:name=".GalleryActivity"
+            android:name=".gallery.GalleryActivity"
             android:exported="false" />
         <activity
-            android:name=".StudentActivity"
+            android:name=".student.StudentActivity"
             android:exported="false" />
         <activity
-            android:name=".TeacherActivity"
+            android:name=".teacher.TeacherActivity"
             android:exported="false" />
         <activity
             android:name=".SignUpTeacher"
@@ -69,7 +69,7 @@
             android:name=".LogInActivity"
             android:exported="false" />
         <activity
-            android:name=".Student_Add"
+            android:name=".student.Student_Add"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

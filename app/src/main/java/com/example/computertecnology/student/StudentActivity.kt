@@ -1,10 +1,10 @@
-package com.example.computertecnology
+package com.example.computertecnology.student
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.LinearLayout
-import androidx.constraintlayout.widget.ConstraintSet.Layout
+import com.example.computertecnology.R
 
 class StudentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

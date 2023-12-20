@@ -1,9 +1,10 @@
-package com.example.computertecnology
+package com.example.computertecnology.student
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.Toast
+import com.example.computertecnology.R
 import com.google.android.material.button.MaterialButton
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError

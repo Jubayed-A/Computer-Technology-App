@@ -1,12 +1,12 @@
-package com.example.computertecnology
+package com.example.computertecnology.gallery
 
 import android.app.Activity
-import android.graphics.BitmapFactory
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.computertecnology.R
 
 class GalleryAdapter(private var galleryArrayList: ArrayList<Gallery>, var context: Activity) :
     RecyclerView.Adapter<GalleryAdapter.GalleryViewHolder>() {

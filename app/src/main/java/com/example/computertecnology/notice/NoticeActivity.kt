@@ -1,11 +1,12 @@
-package com.example.computertecnology
+package com.example.computertecnology.notice
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.computertecnology.TeacherAdapter.onItemClickListener
+import com.example.computertecnology.Data
+import com.example.computertecnology.R
 
 class NoticeActivity : AppCompatActivity() {
 

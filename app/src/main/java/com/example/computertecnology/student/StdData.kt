@@ -1,4 +1,4 @@
-package com.example.computertecnology
+package com.example.computertecnology.student
 
 class StdData(
     val name: String,

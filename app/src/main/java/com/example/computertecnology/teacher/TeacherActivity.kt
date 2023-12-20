@@ -1,11 +1,13 @@
-package com.example.computertecnology
+package com.example.computertecnology.teacher
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.computertecnology.TeacherAdapter.onItemClickListener
+import com.example.computertecnology.Data
+import com.example.computertecnology.R
+import com.example.computertecnology.teacher.TeacherAdapter.onItemClickListener
 
 class TeacherActivity : AppCompatActivity() {
 

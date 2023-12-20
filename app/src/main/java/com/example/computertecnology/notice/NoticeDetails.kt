@@ -1,9 +1,10 @@
-package com.example.computertecnology
+package com.example.computertecnology.notice
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.computertecnology.R
 
 class NoticeDetails : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

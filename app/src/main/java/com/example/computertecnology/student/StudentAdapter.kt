@@ -1,4 +1,4 @@
-package com.example.computertecnology
+package com.example.computertecnology.student
 
 import android.app.Activity
 import android.view.LayoutInflater
@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.imageview.ShapeableImageView
+import com.example.computertecnology.R
 
 class StudentAdapter(private var studentArrayList: ArrayList<StdData>, var context: Activity) :
     RecyclerView.Adapter<StudentAdapter.StudentViewHolder>() {

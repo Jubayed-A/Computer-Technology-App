@@ -1,4 +1,4 @@
-package com.example.computertecnology
+package com.example.computertecnology.notice
 
 import android.app.Activity
 import android.view.LayoutInflater
@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.computertecnology.Data
+import com.example.computertecnology.R
 import com.google.android.material.imageview.ShapeableImageView
 
 class NoticeAdapter(private var noticeArrayList: ArrayList<Data>, var context: Activity) :
