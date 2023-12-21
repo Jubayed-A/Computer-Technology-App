@@ -67,4 +67,8 @@
     <string name="dev_info">By\n Jubayed and His Team</string>
     <string name="app_info_splash">Computer Technology of\n SIPI</string>
     <string name="logo_splash">logo splash</string>
+    <string name="shahinur_sir_description">"Shahinur Islam Shahin is a Chief instructor of Computer Science and Technology at Shyamoli Ideal Polytechnic Institute , He is Completed his Bachelor of Science(BSC) In Computer Science and Engineering(CSE) at Dhaka International University "</string>
+    <string name="masood_sir_description">"Masood Ranna is a Junior instructor of Computer Science and Technology at Shyamoli Ideal Polytechnic Institute , He is Completed his Bachelor of Science(BSC) In Computer Science and Engineering(CSE) at Bangladesh University "</string>
+    <string name="palash_sir_description">"Palash Chandra Biswas is a Instructor of Computer Science and Technology at Shyamoli Ideal Polytechnic Institute , He is Completed his Master of Science(MSC) In Computer Science and Engineering(CSE) at Jahangirnagar University and also completed Bachelor of Science(BSC) In Computer Science and Engineering(CSE) at Bangladesh University "</string>
+    <string name="rubia_mam_description">"Rubia Amina is a instructor of Computer Science and Technology at Shyamoli Ideal Polytechnic Institute , She is Completed her Master of Science(MSC) and Bachelor of Science(BSC) In Computer Science and Engineering(CSE) at  American International University"</string>
 </resources>

@@ -22,25 +22,33 @@ class TeacherActivity : AppCompatActivity() {
         // teacher image declare
         val teacherImageArray = arrayOf(
             R.drawable.sample_img,
-            R.drawable.img2
+            R.drawable.img2,
+            R.drawable.programming,
+            R.drawable.programming1
         )
 
         // teacher name declare
         val teacherNameArray = arrayOf(
-            "Sahinur Islam Sahin",
-            "Polash Chandro Bisswas"
+            "Shahinur Islam Shahin",
+            "Masood Raana",
+            "Palash Chandra Biswas",
+            "Rubia Amina"
         )
 
         // teacher prof declare
         val teacherProfArray = arrayOf(
-            "Chief Instructor(CI)",
-            "Senior Instructor"
+            "Chief Instructor(Computer Science & Technology)",
+            "Junior Instructor(Computer Science & Technology)",
+            "Instructor(Computer Science & Technology)",
+            "Instructor(Computer Science & Technology)"
         )
 
         // teacher description
         val teacherDescriptionArray = arrayOf(
-            "Shahinur islam shain is Chief instructor of computer department ",
-            "Plolas Chondro Biswas is a Senior Instructor of computer department"
+            getString(R.string.shahinur_sir_description),
+            getString(R.string.masood_sir_description),
+            getString(R.string.palash_sir_description),
+            getString(R.string.shahinur_sir_description),
         )
 
         // to set behave of item inside recyclerview
