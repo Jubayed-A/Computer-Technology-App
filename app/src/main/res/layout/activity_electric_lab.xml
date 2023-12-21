@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".lab.ComputerLab">
+    tools:context=".lab.ProgrammingLab">
 
     <TextView
         android:id="@+id/welcomeTxt"
@@ -15,7 +15,7 @@
         android:layout_marginEnd="10dp"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Welcome to Electric\n Lab Section"
+        android:text="Welcome to Networking\n Lab Section"
         android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

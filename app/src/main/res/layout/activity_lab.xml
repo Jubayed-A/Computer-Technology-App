@@ -37,7 +37,7 @@
                 android:layout_marginBottom="40dp"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="Welcome to Laboratory"
+                android:text="@string/welcome_to_laboratory"
                 android:textSize="28sp"
                 android:textStyle="bold" />
 
@@ -58,7 +58,7 @@
                         android:layout_height="160dp"
                         android:layout_margin="5dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/computer_lab_icon"
+                        android:src="@drawable/programming1"
                         app:shapeAppearanceOverlay="@style/SoftCorner" />
 
 
@@ -67,7 +67,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:gravity="center"
-                        android:text="Programming Lab"
+                        android:text="@string/programming_lab"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -85,7 +85,7 @@
                         android:layout_height="160dp"
                         android:layout_margin="5dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/science_lab_icon"
+                        android:src="@drawable/database2"
                         app:shapeAppearanceOverlay="@style/SoftCorner" />
 
                     <TextView
@@ -93,7 +93,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:gravity="center"
-                        android:text="Database Lab"
+                        android:text="@string/database_lab"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -118,7 +118,7 @@
                         android:layout_height="160dp"
                         android:layout_margin="5dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/elctrical2_lab_icon"
+                        android:src="@drawable/networking"
                         app:shapeAppearanceOverlay="@style/SoftCorner" />
 
                     <TextView
@@ -126,7 +126,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:gravity="center"
-                        android:text="Networking Lab"
+                        android:text="@string/networking_lab"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -152,7 +152,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:gravity="center"
-                        android:text="Hardware Lab"
+                        android:text="@string/hardware_lab"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 

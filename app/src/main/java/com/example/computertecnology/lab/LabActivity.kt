@@ -19,25 +19,25 @@ class LabActivity : AppCompatActivity() {
 
         // computer lab activity
         compute.setOnClickListener {
-            val intentComputer = Intent(this, ComputerLab::class.java)
+            val intentComputer = Intent(this, ProgrammingLab::class.java)
             startActivity(intentComputer)
         }
 
         // science lab activity
         science.setOnClickListener {
-            val intentScience = Intent(this, ScienceLab::class.java)
+            val intentScience = Intent(this, DatabaseLab::class.java)
             startActivity(intentScience)
         }
 
         // electric lab activity
         electric.setOnClickListener {
-            val intentElectric = Intent(this, ElectricLab::class.java)
+            val intentElectric = Intent(this, NetworkingLab::class.java)
             startActivity(intentElectric)
         }
 
         // others lab activity
         others.setOnClickListener {
-            val intentOthers = Intent(this, OthersLab::class.java)
+            val intentOthers = Intent(this, HardwareLab::class.java)
             startActivity(intentOthers)
         }
 

@@ -16,16 +16,16 @@
             android:name=".welcome.WelcomeActivity"
             android:exported="false" />
         <activity
-            android:name=".lab.OthersLab"
+            android:name=".lab.HardwareLab"
             android:exported="false" />
         <activity
-            android:name=".lab.ElectricLab"
+            android:name=".lab.NetworkingLab"
             android:exported="false" />
         <activity
-            android:name=".lab.ScienceLab"
+            android:name=".lab.DatabaseLab"
             android:exported="false" />
         <activity
-            android:name=".lab.ComputerLab"
+            android:name=".lab.ProgrammingLab"
             android:exported="false" />
         <activity
             android:name=".student.StudentRemove"

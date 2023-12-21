@@ -8,7 +8,7 @@ import com.example.computertecnology.gallery.Gallery
 import com.example.computertecnology.gallery.GalleryAdapter
 import com.example.computertecnology.R
 
-class ElectricLab : AppCompatActivity() {
+class NetworkingLab : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var electricArrayList: ArrayList<Gallery>
@@ -20,12 +20,16 @@ class ElectricLab : AppCompatActivity() {
 
         // electric lab image declare
         val electricImageArray = arrayOf(
-            R.drawable.lab1,
-            R.drawable.lab2,
-            R.drawable.lab3,
-            R.drawable.lab4,
-            R.drawable.lab5,
-            R.drawable.lab6
+            R.drawable.networking,
+            R.drawable.networking1,
+            R.drawable.networking2,
+            R.drawable.networking3,
+            R.drawable.networking4,
+            R.drawable.networking5,
+            R.drawable.networking6,
+            R.drawable.networking7,
+            R.drawable.networking8,
+            R.drawable.networking9,
         )
 
         // to set behave of item inside recyclerview
