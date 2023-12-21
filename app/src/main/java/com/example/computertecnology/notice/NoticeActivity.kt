@@ -3,6 +3,7 @@ package com.example.computertecnology.notice
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.computertecnology.Data
@@ -21,26 +22,38 @@ class NoticeActivity : AppCompatActivity() {
 
         // notice image declare
         val noticeImageArray = arrayOf(
-            R.drawable.sample_img,
-            R.drawable.img2
+            R.drawable.notice_exam,
+            R.drawable.notice1,
+            R.drawable.notice4,
+            R.drawable.notice2,
+            R.drawable.notice3,
         )
 
         // notice name declare
-        val noticeNameArray = arrayOf(
-            "Sahinur Islam Sahin",
-            "Polash Chandro Bisswas"
+        val noticeTitleArray = arrayOf(
+            "Exam Notice",
+            "Bijoy Dibos Notice",
+            "Pending Due Notice",
+            "21st February notice",
+            "Shadinota Dibos"
         )
 
         // notice prof declare
-        val noticeProfArray = arrayOf(
+        val noticeSubTitleArray = arrayOf(
             "Chief Instructor(CI)",
-            "Senior Instructor"
+            "Senior Instructor",
+            "Senior Instructor",
+            "Senior Instructor",
+            "Senior Instructor",
         )
 
         // notice description
         val noticeDescriptionArray = arrayOf(
             "Shahinur islam shain is Chief instructor of computer department ",
-            "Plolas Chondro Biswas is a Senior Instructor of computer department"
+            "Plolas Chondro Biswas is a Senior Instructor of computer department",
+            "Plolas Chondro Biswas is a Senior Instructor of computer department",
+            "Plolas Chondro Biswas is a Senior Instructor of computer department",
+            "Plolas Chondro Biswas is a Senior Instructor of computer department",
         )
 
         // to set behave of item inside recyclerview
@@ -51,7 +64,7 @@ class NoticeActivity : AppCompatActivity() {
 
         // add all data one by one to teacherArrayList
         for (index in noticeImageArray.indices){
-            val notice = Data(noticeNameArray[index], noticeImageArray[index], noticeProfArray[index], noticeDescriptionArray[index])
+            val notice = Data(noticeTitleArray[index], noticeImageArray[index], noticeSubTitleArray[index], noticeDescriptionArray[index])
             noticeArrayList.add(notice)
         }
 

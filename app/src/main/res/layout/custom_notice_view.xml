@@ -15,16 +15,26 @@
         app:strokeColor="#673AB7">
 
         <LinearLayout
-            android:layout_width="386dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/noticeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Person Name Here"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="220dp"
+                android:layout_height="150dp"
                 android:id="@+id/noticeImg"
                 android:layout_margin="5dp"
-                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
                 android:src="@drawable/sample_img"
                 app:shapeAppearanceOverlay="@style/SoftCorner" />
 
@@ -35,12 +45,12 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/noticeTitle"
+                    android:id="@+id/noticeSubTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="Person Name Here"
-                    android:textSize="26sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
             </LinearLayout>

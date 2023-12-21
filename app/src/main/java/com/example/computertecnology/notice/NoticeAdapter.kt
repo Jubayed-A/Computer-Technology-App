@@ -24,7 +24,8 @@ class NoticeAdapter(private var noticeArrayList: ArrayList<Data>, var context: A
 
     class NoticeViewHolder(noticeView: View, listener: onItemClickListener) :
         RecyclerView.ViewHolder(noticeView) {
-        val nName = noticeView.findViewById<TextView>(R.id.noticeTitle)
+        val nTitle = noticeView.findViewById<TextView>(R.id.noticeTitle)
+        val nSubTitle = noticeView.findViewById<TextView>(R.id.noticeSubTitle)
         val nImage = noticeView.findViewById<ShapeableImageView>(R.id.noticeImg)
 
         init {
@@ -49,7 +50,8 @@ class NoticeAdapter(private var noticeArrayList: ArrayList<Data>, var context: A
 
     override fun onBindViewHolder(holder: NoticeViewHolder, position: Int) {
         val currentTeacher = noticeArrayList[position]
-        holder.nName.text = currentTeacher.name
+        holder.nTitle.text = currentTeacher.name
+        holder.nSubTitle.text = currentTeacher.prof
         holder.nImage.setImageResource(currentTeacher.image)
     }
 
