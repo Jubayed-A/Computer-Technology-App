@@ -49,7 +49,7 @@ class NoticeActivity : AppCompatActivity() {
 
         // notice description
         val noticeDescriptionArray = arrayOf(
-            "Shahinur islam shain is Chief instructor of computer department ",
+            "Shahinur islam Shahin is Chief instructor of computer department ",
             "Plolas Chondro Biswas is a Senior Instructor of computer department",
             "Plolas Chondro Biswas is a Senior Instructor of computer department",
             "Plolas Chondro Biswas is a Senior Instructor of computer department",
