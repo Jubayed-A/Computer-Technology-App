@@ -32,28 +32,28 @@ class NoticeActivity : AppCompatActivity() {
         // notice name declare
         val noticeTitleArray = arrayOf(
             "Exam Notice",
-            "Victory Day Notice",
+            "Bijoy Dibos Notice",
             "Pending Due Notice",
-            "21st February Notice",
-            "Independence Day Notice"
+            "21st February notice",
+            "Shadinota Dibos"
         )
 
         // notice prof declare
         val noticeSubTitleArray = arrayOf(
-            "SIPI Final Semester Exam Notice 2023",
-            "Victory Day Notice in 16 December 2023",
-            "Complete The Pending Due immediately",
-            "Notice for International Mother Language",
-            "Independence Day Notice in 26 March 2023",
+            "Chief Instructor(CI)",
+            "Senior Instructor",
+            "Senior Instructor",
+            "Senior Instructor",
+            "Senior Instructor",
         )
 
         // notice description
         val noticeDescriptionArray = arrayOf(
-            getString(R.string.exam_notice_description),
-            getString(R.string.victory_notice_description),
-            getString(R.string.due_payment_notice),
-            getString(R.string.february_21st),
-            getString(R.string.notice_for_independence_day),
+            "Shahinur islam shain is Chief instructor of computer department ",
+            "Plolas Chondro Biswas is a Senior Instructor of computer department",
+            "Plolas Chondro Biswas is a Senior Instructor of computer department",
+            "Plolas Chondro Biswas is a Senior Instructor of computer department",
+            "Plolas Chondro Biswas is a Senior Instructor of computer department",
         )
 
         // to set behave of item inside recyclerview
