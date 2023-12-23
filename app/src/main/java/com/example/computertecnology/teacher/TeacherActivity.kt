@@ -21,10 +21,10 @@ class TeacherActivity : AppCompatActivity() {
 
         // teacher image declare
         val teacherImageArray = arrayOf(
-            R.drawable.sample_img,
-            R.drawable.img2,
-            R.drawable.programming,
-            R.drawable.programming1
+            R.drawable.shahinur,
+            R.drawable.massud,
+            R.drawable.palash,
+            R.drawable.mam
         )
 
         // teacher name declare
@@ -32,7 +32,7 @@ class TeacherActivity : AppCompatActivity() {
             "Shahinur Islam Shahin",
             "Masood Raana",
             "Palash Chandra Biswas",
-            "Rubia Amina"
+            "Rubaia Amina"
         )
 
         // teacher prof declare
@@ -48,7 +48,7 @@ class TeacherActivity : AppCompatActivity() {
             getString(R.string.shahinur_sir_description),
             getString(R.string.masood_sir_description),
             getString(R.string.palash_sir_description),
-            getString(R.string.shahinur_sir_description),
+            getString(R.string.rubia_mam_description),
         )
 
         // to set behave of item inside recyclerview

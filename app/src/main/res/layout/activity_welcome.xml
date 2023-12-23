@@ -40,61 +40,71 @@
                 android:textSize="28sp"
                 android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="220dp"
-                app:srcCompat="@drawable/welcome_img"
-                android:scaleType="fitXY"
-                android:contentDescription="@string/welcome_img" />
 
-            <LinearLayout
+
+            <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
+                android:padding="5dp">
 
-                <TextView
-                    android:id="@+id/byPrincipal"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical">
 
-                    android:gravity="center"
-                    android:padding="15dp"
-                    android:text="Welcome to Laboratory"
-                    android:textSize="28sp"
-                    android:textStyle="bold" />
-                <TextView
-                android:id="@+id/byCI"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
 
-                android:gravity="center"
-                android:padding="15dp"
-                android:text="Welcome to Laboratory"
-                android:textSize="28sp"
-                android:textStyle="bold" />
-                <TextView
-                android:id="@+id/byOthersTeacher"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="40dp"
-                android:gravity="center"
-                android:padding="15dp"
-                android:text="Welcome to Laboratory"
-                android:textSize="28sp"
-                android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/welcome_img"
+                        app:srcCompat="@drawable/principal" />
 
-            </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/byCI"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="@string/principal_msg"
+                        android:textSize="@dimen/_18ssp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:contentDescription="@string/welcome_img"
+                        app:srcCompat="@drawable/director" />
+
+
+                    <TextView
+                        android:id="@+id/byDirector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="@string/director_msg"
+                        android:textSize="@dimen/_18ssp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </ScrollView>
 
 
         </LinearLayout>
