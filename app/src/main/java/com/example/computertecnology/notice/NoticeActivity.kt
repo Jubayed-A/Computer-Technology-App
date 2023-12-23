@@ -35,16 +35,16 @@ class NoticeActivity : AppCompatActivity() {
             "Victory Day Notice",
             "Pending Due Notice",
             "21st February notice",
-            "Shadinota Dibos"
+            "Independence Day Notice"
         )
 
         // notice prof declare
         val noticeSubTitleArray = arrayOf(
             "Final Semester Exam Notice 2023",
             "Victory Day Notice in 2023",
-            "Senior Instructor",
-            "Senior Instructor",
-            "Senior Instructor",
+            "Notice for Pending Due Payment",
+            "Notice for International mother language",
+            "Notice for Independence Day in 2023",
         )
 
         // notice description
