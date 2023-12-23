@@ -41,7 +41,7 @@ class NoticeActivity : AppCompatActivity() {
         // notice prof declare
         val noticeSubTitleArray = arrayOf(
             "Chief Instructor(CI)",
-            "Senior Instructor",
+            "16 December bijoy dibos notice ",
             "Senior Instructor",
             "Senior Instructor",
             "Senior Instructor",
@@ -49,7 +49,7 @@ class NoticeActivity : AppCompatActivity() {
 
         // notice description
         val noticeDescriptionArray = arrayOf(
-            "Shahinur islam shain is Chief instructor of computer department ",
+            "Shahinur islam Shahin is Chief instructor of computer department ",
             "Plolas Chondro Biswas is a Senior Instructor of computer department",
             "Plolas Chondro Biswas is a Senior Instructor of computer department",
             "Plolas Chondro Biswas is a Senior Instructor of computer department",
