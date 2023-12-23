@@ -63,14 +63,14 @@
     <string name="networking_lab">Networking Lab</string>
     <string name="hardware_lab">Hardware Lab</string>
     <string name="welcome_img">welcomeImage</string>
-    <string name="welcome_text_department">Welcome to Our Department</string>
+    <string name="welcome_text_department">Welcome to Computer Department</string>
     <string name="dev_info">By\n Jubayed and His Team</string>
     <string name="app_info_splash">Computer Technology of\n SIPI</string>
     <string name="logo_splash">logo splash</string>
     <string name="shahinur_sir_description">"Shahinur Islam Shahin is a Chief instructor of Computer Science and Technology at Shyamoli Ideal Polytechnic Institute , He is Completed his Bachelor of Science(BSC) In Computer Science and Engineering(CSE) at Dhaka International University "</string>
     <string name="masood_sir_description">"Masood Ranna is a Junior instructor of Computer Science and Technology at Shyamoli Ideal Polytechnic Institute , He is Completed his Bachelor of Science(BSC) In Computer Science and Engineering(CSE) at Bangladesh University "</string>
     <string name="palash_sir_description">"Palash Chandra Biswas is a Instructor of Computer Science and Technology at Shyamoli Ideal Polytechnic Institute , He is Completed his Master of Science(MSC) In Computer Science and Engineering(CSE) at Jahangirnagar University and also completed Bachelor of Science(BSC) In Computer Science and Engineering(CSE) at Bangladesh University "</string>
-    <string name="rubia_mam_description">"Rubia Amina is a instructor of Computer Science and Technology at Shyamoli Ideal Polytechnic Institute , She is Completed her Master of Science(MSC) and Bachelor of Science(BSC) In Computer Science and Engineering(CSE) at  American International University"</string>
+    <string name="rubia_mam_description">"Rubaia Amina is a instructor of Computer Science and Technology at Shyamoli Ideal Polytechnic Institute , She is Completed her Master of Science(MSC) and Bachelor of Science(BSC) In Computer Science and Engineering(CSE) at  American International University"</string>
     <string name="welcome_text">Shyamoli Ideal Polytechnic Institute (SIPI) is a renowned institution, established in 1979 under the Bangladesh Technical Education Board, dedicated to delivering top-tier technical education. As a leading polytechnic institute in Dhaka, Chittagong, Rangpur, and Laxmipur, SIPI has consistently achieved remarkable results, cementing its position as a top educational choice in Bangladesh.
 
 Our mission at SIPI is to equip students with modern, information technology-based, career-oriented education, creating opportunities for self-employment and career advancement. With a commitment to co-educational, career-oriented modern education, we nurture self-reliant personalities and instill a sense of humanity in our students, preparing them for successful careers and responsible citizenship.
@@ -81,4 +81,6 @@ SIPI goes beyond shaping careers; we nurture futures. Join us on this journey of
 
 Choose SIPI for a future filled with opportunities and success in the world of technical education. Welcome to Shyamoli Ideal Polytechnic Institute!</string>
     <string name="teacherlogo">teacherlogo</string>
+    <string name="principal_msg">It is with great pleasure and enthusiasm that I extend my warmest welcome to all the students, faculty members, and students of Shyamoli Ideal Polytechnic Institute.</string>
+    <string name="director_msg">I extend a warm and hearty welcome to each of you as the Director of Shyamoli Ideal Polytechnic Institute. It is an honor to lead an institution that is not just an educational establishment but a dynamic ecosystem fostering innovation, academic excellence, and personal growth.</string>
 </resources>
