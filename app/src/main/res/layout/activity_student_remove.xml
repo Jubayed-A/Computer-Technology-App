@@ -43,15 +43,13 @@
         android:layout_marginTop="5dp"
         android:hint="@string/roll"
         app:endIconMode="clear_text"
-        app:hintTextColor="@color/black"
         app:startIconDrawable="@drawable/board_roll_icon">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/stdRoll"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="number"
-            android:textColor="@color/black"
-            android:id="@+id/stdRoll">
+            android:inputType="number">
 
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>

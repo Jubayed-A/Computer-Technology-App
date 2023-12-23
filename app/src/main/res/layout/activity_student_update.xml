@@ -26,144 +26,146 @@
         android:textAlignment="center"
         android:textSize="30sp" />
 
-    <!--name here -->
-    <com.google.android.material.textfield.TextInputLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:hint="Name"
-        app:endIconMode="clear_text"
-        app:hintTextColor="@color/black"
-        app:startIconDrawable="@drawable/person_icon">
+        android:layout_height="wrap_content">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:inputType="textPersonName"
-            android:textColor="@color/black"
-            android:id="@+id/stdName"
-            >
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        </com.google.android.material.textfield.TextInputEditText>
-    </com.google.android.material.textfield.TextInputLayout>
+            <!--name here -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Name"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/person_icon">
 
-    <!--  board roll  -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:hint="@string/roll"
-        app:endIconMode="clear_text"
-        app:hintTextColor="@color/black"
-        app:startIconDrawable="@drawable/board_roll_icon">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/stdName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:inputType="number"
-            android:textColor="@color/black"
-            android:id="@+id/stdRoll">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
 
-        </com.google.android.material.textfield.TextInputEditText>
-    </com.google.android.material.textfield.TextInputLayout>
+            <!--  board roll  -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/roll"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/board_roll_icon">
 
-    <!--    section code here-->
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:hint="Section"
-        app:endIconMode="clear_text"
-        app:hintTextColor="@color/black"
-        app:startIconDrawable="@drawable/section_icon">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/stdRoll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:inputType="text"
-            android:textColor="@color/black"
-            android:id="@+id/stdSection">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
 
-        </com.google.android.material.textfield.TextInputEditText>
-    </com.google.android.material.textfield.TextInputLayout>
+            <!--    section code here-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Section"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/section_icon">
 
-    <!--department code here-->
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:hint="Department"
-        app:endIconMode="clear_text"
-        app:hintTextColor="@color/black"
-        app:startIconDrawable="@drawable/department_icon">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/stdSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:inputType="text"
-            android:textColor="@color/black"
-            android:id="@+id/stdDepartment">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
 
-        </com.google.android.material.textfield.TextInputEditText>
-    </com.google.android.material.textfield.TextInputLayout>
+            <!--department code here-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Department"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/department_icon">
 
-    <!--choose semester-->
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="match_parent"
-        android:layout_height="57dp"
-        android:layout_marginTop="5dp"
-        app:endIconDrawable="@drawable/arrow_down"
-        app:endIconTint="@color/black">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/stdDepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text">
 
-        <AutoCompleteTextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="@font/lato"
-            android:inputType="none"
-            android:text="@string/choose_semester"
-            android:id="@+id/itemSemester"/>
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--choose semester-->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginTop="5dp"
+                app:endIconDrawable="@drawable/arrow_down">
+
+                <AutoCompleteTextView
+                    android:id="@+id/itemSemester"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/lato"
+                    android:inputType="none"
+                    android:text="@string/choose_semester" />
 
 
-    </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-    <!--phone number code-->
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:hint="Phone Number"
-        app:hintTextColor="@color/black"
-        app:startIconDrawable="@drawable/phone_icon"
-        app:endIconMode="clear_text">
+            <!--phone number code-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Phone Number"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/phone_icon">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:inputType="phone"
-            android:textColor="@color/black"
-            android:id="@+id/stdPhone">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/stdPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="phone">
 
-        </com.google.android.material.textfield.TextInputEditText>
-    </com.google.android.material.textfield.TextInputLayout>
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
 
-    <!--update button code here-->
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="200dp"
-        android:layout_height="57dp"
-        android:id="@+id/studentUpdate"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#78d2a5"
-        android:fontFamily="@font/lato"
-        android:text="Update Student"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:cornerRadius="10dp"
-        app:strokeColor="#2196F3"
-        app:strokeWidth="1dp">
+            <!--update button code here-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/studentUpdate"
+                android:layout_width="200dp"
+                android:layout_height="57dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#78d2a5"
+                android:fontFamily="@font/lato"
+                android:text="Update Student"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp"
+                app:strokeColor="#2196F3"
+                app:strokeWidth="1dp">
 
-    </com.google.android.material.button.MaterialButton>
+            </com.google.android.material.button.MaterialButton>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 
 </LinearLayout>

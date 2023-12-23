@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Computer Tecnology</string>
-    <string name="CollegeName">Shaymoli Ideal Polytecnic Instituite</string>
+    <string name="app_name">Computer Technology</string>
+    <string name="CollegeName">Shyamoli Ideal Polytechnic Institute</string>
     <string name="signUpTeacher">Don\'t Have Account ? Teacher</string>
     <string name="signUpStudent">Don\'t Have Account ? Student</string>
     <string name="login">LogIn</string>
@@ -21,42 +21,6 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="lorem_ipsum">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
-        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
-        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
-        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
-        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
-        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
-        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
-        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
-        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
-        bibendum, vel congue leo egestas.\n\n
-        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
-        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
-        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
-        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
-        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
-        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
-        est.\n\n
-        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
-        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
-        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
-        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
-        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
-        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
-        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
-        convallis.\n\n
-        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
-        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
-        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
-        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
-        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
-        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
-    </string>
     <string name="welcome_to_laboratory">Welcome to Laboratory</string>
     <string name="programming_lab">Programming Lab</string>
     <string name="database_lab">Database Lab</string>
@@ -71,16 +35,57 @@
     <string name="masood_sir_description">"Masood Ranna is a Junior instructor of Computer Science and Technology at Shyamoli Ideal Polytechnic Institute , He is Completed his Bachelor of Science(BSC) In Computer Science and Engineering(CSE) at Bangladesh University "</string>
     <string name="palash_sir_description">"Palash Chandra Biswas is a Instructor of Computer Science and Technology at Shyamoli Ideal Polytechnic Institute , He is Completed his Master of Science(MSC) In Computer Science and Engineering(CSE) at Jahangirnagar University and also completed Bachelor of Science(BSC) In Computer Science and Engineering(CSE) at Bangladesh University "</string>
     <string name="rubia_mam_description">"Rubaia Amina is a instructor of Computer Science and Technology at Shyamoli Ideal Polytechnic Institute , She is Completed her Master of Science(MSC) and Bachelor of Science(BSC) In Computer Science and Engineering(CSE) at  American International University"</string>
-    <string name="welcome_text">Shyamoli Ideal Polytechnic Institute (SIPI) is a renowned institution, established in 1979 under the Bangladesh Technical Education Board, dedicated to delivering top-tier technical education. As a leading polytechnic institute in Dhaka, Chittagong, Rangpur, and Laxmipur, SIPI has consistently achieved remarkable results, cementing its position as a top educational choice in Bangladesh.
 
-Our mission at SIPI is to equip students with modern, information technology-based, career-oriented education, creating opportunities for self-employment and career advancement. With a commitment to co-educational, career-oriented modern education, we nurture self-reliant personalities and instill a sense of humanity in our students, preparing them for successful careers and responsible citizenship.
-
-At SIPI, we offer comprehensive support, including comfortable hostel facilities for both male and female students, a robust transportation network, and a dedicated Placement Center. Our experienced faculty, with a minimum of 10 years of practical teaching and industrial experience, ensures that you receive world-class technical education.
-
-SIPI goes beyond shaping careers; we nurture futures. Join us on this journey of educational excellence and self-discovery. We believe in fostering a brighter and more prosperous tomorrow for our students and our society.
-
-Choose SIPI for a future filled with opportunities and success in the world of technical education. Welcome to Shyamoli Ideal Polytechnic Institute!</string>
-    <string name="teacherlogo">teacherlogo</string>
+    <string name="teacher_logo">teacher logo</string>
     <string name="principal_msg">It is with great pleasure and enthusiasm that I extend my warmest welcome to all the students, faculty members, and students of Shyamoli Ideal Polytechnic Institute.</string>
     <string name="director_msg">I extend a warm and hearty welcome to each of you as the Director of Shyamoli Ideal Polytechnic Institute. It is an honor to lead an institution that is not just an educational establishment but a dynamic ecosystem fostering innovation, academic excellence, and personal growth.</string>
+
+    <!--    lorem string  -->
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n
+    </string>
+
+    <!--    for exam notice -->
+    <string name="exam_notice_description">Applicability:All Semesters students\n\n
+
+Dear Students,\n\n
+
+It is to here by inform you that your SIPI Examination (Final Semesters Exam) will be held from 01-Nov -2023 onwards. It is compulsory for all the students to attempt the test. In case of absent, student will be responsible for non-processing of the result as per the scheme of examination.\n
+
+Semester Final STEPS / INSTRUCTIONS\n\n
+
+1. Online Exam will be conducted for all Semesters students on MCQ based method.\n
+
+2. The duration of the test will be 1 Hour and there will be no negative marking in the test.\n
+
+3. There will be four choices for each question. Only one of these choices is correct. Student has to choose only one of the four choices as correct answer.\n
+
+4. Click on Start Test to read the test instructions/information.\n
+
+5. After reading test information click on Start Test.\n
+
+6. Read question carefully, tick ONE correct option from A, B, C, D and click on Save / Mark and Submit.\n
+
+7. Test will automatically get closed if the duration of the test is over.\n
+Note: It is compulsory to clear all pending dues, submit pending assignments. Those who fail to comply, will be liable to face consequences. In case of doubt, contact on 7723930504 immediately.\n
+
+MA Sattar
+Principal</string>
+
+    <string name="victory_notice_description">The celebration of Victory Day has been taking place since 1972. The Bangladesh Liberation War became a topic of great importance in cinema, literature, history lessons at school, the mass media, and the arts in Bangladesh. The ritual of the celebration gradually obtained a distinctive character with a number of similar elements: Military Parade by the Bangladesh Armed Forces at the National Parade Ground, ceremonial meetings, speeches, lectures, receptions and fireworks displays.[13] Victory Day in Bangladesh is a joyous celebration in which popular culture plays a great role. TV and radio stations broadcast special programs and patriotic songs.[14] The main streets are decorated with national flags. Different political parties and socioeconomic organisations undertake programs to mark the day in a befitting manner, including the paying of respects at Jatiyo Smriti Soudho, the national memorial at Savar in Dhaka District\n \n All the students have been asked to participate in College Function and other activities at 7 am following the health rules on the occasion of 16 December Victory day \'s Day celebration.\n\nThe Principal</string>
+    <string name="due_payment_notice">** Notice Pending Dues: Clear Your Dues Now and Avoid Late Fee Charges **\n\nIn continuation to earlier notices, we would like to remind all students to clear their pending dues (Academic/Transport/Hostel, etc.) immediately without any further delay. Timely payment is essential to avoid inconvenience and additional charges. Failure to comply with this notice will result in the imposition of late fee charges, as outlined below:\n\n– For the period from 19th February 2023 to 28th February 2023, a late fee fine of Rs 30/- per day will be applicable.\n– From 1st March 2023 to 14th March 2023, a late fee fine of Rs 1000/- will be applicable.\n– For the period from 15th March 2023 to 30th March 2023, a late fee fine of Rs 2000/- will be applicable.\n\nIt is crucial to settle all pending dues before the specified deadlines to avoid these late fee charges. Please note that after 30th March 2023, students with pending dues will not be allowed to attend classes or utilize the Transport/Hostel facility. Furthermore, their names will be struck off from the ERP for attendance purposes.\n\nWe urge all students to take immediate action and clear their pending dues to ensure uninterrupted access to educational resources and facilities. Non-compliance with this notice will result in significant disruptions to your academic journey.\n\nTo rectify the situation, students will be required to seek special permission and apply for the re-registration process. Please note that a charge of Rs 5000/- will be applicable for the re-registration process.\n\nWe understand the importance of timely payments and their impact on the smooth functioning of academic activities. Therefore, we kindly request all students to fulfill their financial obligations promptly to maintain a conducive learning environment.\n\nFor any queries or assistance regarding pending_dues and payment procedures, please contact the concerned authorities. Let’s take immediate action and clear our pending dues to ensure a seamless educational experience for everyone.\n\n</string>
+    <string name="february_21st">,All the students have been asked to participate in College Function and other activities at 7 am following the health rules on the occasion of February 21st international mother language for Bangla Language\'s Day celebration.\n\nthe principal</string>
+    <string name="notice_for_independence_day">Independence Day is commonly associated with parades, political speeches, fairs, concerts, ceremonies, and various other public and private events celebrating the history and traditions of Bangladesh. TV and radio stations broadcast special programs and patriotic songs in honor of Independence Day. A thirty-one gun salute may be conducted in the morning.[12] The main streets are decorated with national flags. Different political parties and socioeconomic organizations undertake programs to mark the day in a befitting manner, including paying respects at National Martyrs\' Memorial at Savar near Dhaka.[12]\n\nGoogle displayed a doodle commemorating the Independence Day of Bangladesh on 26 March 2017 on their bd domain.[13] The same year celebrations were organised in Tripura, India, by Bangladesh deputy high commissioner stationed there.[14]\n\n2021 marked the Golden Jubilee of the Independence of Bangladesh from Pakistan \n \n All the students have been asked to participate in College Function and other activities at 7 am following the health rules on the occasion of 26th March day \'s Day celebration.\n\nthe principal</string>
+
 </resources>
