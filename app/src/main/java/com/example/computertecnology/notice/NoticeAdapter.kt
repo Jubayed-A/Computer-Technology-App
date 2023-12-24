@@ -14,9 +14,11 @@ class NoticeAdapter(private var noticeArrayList: ArrayList<Data>, var context: A
     RecyclerView.Adapter<NoticeAdapter.NoticeViewHolder>() {
 
     private lateinit var noticeListener: onItemClickListener
+
     interface onItemClickListener {
         fun onItemClicking(position: Int)
     }
+
     fun setOnItemClickListener(listener: onItemClickListener) {
         noticeListener = listener
     }

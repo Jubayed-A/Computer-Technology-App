@@ -63,8 +63,13 @@ class NoticeActivity : AppCompatActivity() {
         noticeArrayList = arrayListOf<Data>()
 
         // add all data one by one to teacherArrayList
-        for (index in noticeImageArray.indices){
-            val notice = Data(noticeTitleArray[index], noticeImageArray[index], noticeSubTitleArray[index], noticeDescriptionArray[index])
+        for (index in noticeImageArray.indices) {
+            val notice = Data(
+                noticeTitleArray[index],
+                noticeImageArray[index],
+                noticeSubTitleArray[index],
+                noticeDescriptionArray[index]
+            )
             noticeArrayList.add(notice)
         }
 
@@ -73,7 +78,7 @@ class NoticeActivity : AppCompatActivity() {
         recyclerView.adapter = noticeAdapter
 
         // click on each teacher
-        noticeAdapter.setOnItemClickListener(object : NoticeAdapter.onItemClickListener{
+        noticeAdapter.setOnItemClickListener(object : NoticeAdapter.onItemClickListener {
             override fun onItemClicking(position: Int) {
                 // on clicking each teacher what action do you want to perform
                 val intentNoticeProfile = Intent(this@NoticeActivity, NoticeDetails::class.java)

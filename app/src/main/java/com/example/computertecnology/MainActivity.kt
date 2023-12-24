@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         // teacher section
         teacher.setOnClickListener {
-            val intentTeacher  = Intent(this, TeacherActivity::class.java)
+            val intentTeacher = Intent(this, TeacherActivity::class.java)
             startActivity(intentTeacher)
         }
 
@@ -57,7 +57,6 @@ class MainActivity : AppCompatActivity() {
             val intentWelcome = Intent(this, WelcomeActivity::class.java)
             startActivity(intentWelcome)
         }
-
 
 
     }
