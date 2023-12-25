@@ -10,6 +10,8 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
+// handle the time how many seconds it wait
+
         Handler().postDelayed({
             val intentMain = Intent(this, MainActivity::class.java)
             finish()
