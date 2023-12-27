@@ -17,6 +17,7 @@ class TeacherActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_teacher)
 
+       // RecyclerView I'd declaration 
         recyclerView = findViewById(R.id.teacherRecyclerView)
 
         // teacher image declare
