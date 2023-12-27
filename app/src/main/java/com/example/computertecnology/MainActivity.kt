@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-// variable or I'd declaration
+        // variable or I'd declaration
 
         val teacher = findViewById<CardView>(R.id.teacherCardView)
         val student = findViewById<CardView>(R.id.studentCardView)
