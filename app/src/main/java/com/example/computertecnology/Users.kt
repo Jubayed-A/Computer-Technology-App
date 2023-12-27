@@ -6,6 +6,4 @@ class Users(
     val section: String,
     val department: String,
     val semester: String,
-    val phone: String
-) {
-}
+    val phone: String)
