@@ -11,6 +11,7 @@ class StudentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_student)
 
+       // variable declaration 
         val studentAdd = findViewById<LinearLayout>(R.id.addStudent)
         val studentInfo = findViewById<LinearLayout>(R.id.studentInfo)
         val studentUpdate = findViewById<LinearLayout>(R.id.updateStudent)
