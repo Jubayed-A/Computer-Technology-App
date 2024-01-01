@@ -14,6 +14,7 @@ class StudentAdapter(private var studentArrayList: ArrayList<StdData>, var conte
     // student view holder
     class StudentViewHolder(studentView: View) :
         RecyclerView.ViewHolder(studentView) {
+        // variable declaration 
         val sName = studentView.findViewById<TextView>(R.id.stdName)
         val sRoll = studentView.findViewById<TextView>(R.id.stdRoll)
         val sSection = studentView.findViewById<TextView>(R.id.stdSection)
