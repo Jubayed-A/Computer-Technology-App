@@ -24,6 +24,9 @@ class TeacherAdapter(private var teacherArrayList: ArrayList<Data>, var context:
 
     class TeacherViewHolder(teacherView: View, listener: onItemClickListener) :
         RecyclerView.ViewHolder(teacherView) {
+
+       // name declaration
+
         val tName = teacherView.findViewById<TextView>(R.id.personName)
         val tProf = teacherView.findViewById<TextView>(R.id.personProf)
         val tImage = teacherView.findViewById<ShapeableImageView>(R.id.imageProfile)
