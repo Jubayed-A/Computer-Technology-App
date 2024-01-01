@@ -23,19 +23,19 @@ class StudentActivity : AppCompatActivity() {
             startActivity(intentAdd)
         }
 
-        //         student info
+        // student info
         studentInfo.setOnClickListener {
             val intentInfo = Intent(this, StudentInformation::class.java)
             startActivity(intentInfo)
         }
 
-        //        student update
+        // student update
         studentUpdate.setOnClickListener {
             val intentUpdate = Intent(this, StudentUpdate::class.java)
             startActivity(intentUpdate)
         }
 
-        //        student remove
+        // student remove
         studentRemove.setOnClickListener {
             val intentRemove = Intent(this, StudentRemove::class.java)
             startActivity(intentRemove)
