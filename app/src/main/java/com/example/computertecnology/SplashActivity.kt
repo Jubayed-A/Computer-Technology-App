@@ -16,7 +16,7 @@ class SplashActivity : AppCompatActivity() {
             val intentMain = Intent(this, MainActivity::class.java)
             finish()
             startActivity(intentMain)
-        }, 2000)
+        }, 2000) // for wait two seconds 
 
     }
 }
