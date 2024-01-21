@@ -32,7 +32,7 @@ Welcome to the Computer Technology, This is a simple Android application for tak
 
 ### Key Features
 
-- MVVM Architecture: The application follows the Model-View-ViewModel architectural pattern for a clean and organized codebase.
+- Material Design : The application follows the Google Material Desing for a create a better Ui Design.
 
 - FireBase Database: Utilizes the Room persistence library for Stor Student Information.
 - Responsive Desing With Third Party Laibrery.
