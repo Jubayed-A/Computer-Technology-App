@@ -34,19 +34,19 @@ Welcome to the Computer Technology, This is a simple Android application for tak
 
 - MVVM Architecture: The application follows the Model-View-ViewModel architectural pattern for a clean and organized codebase.
 
-- Room Database: Utilizes the Room persistence library for data storage, providing a local SQLite database to store notes.
-
-- Filtering and Sorting: Allows users to filter notes based on priority (high, medium, low) and sort them accordingly.
-- Search Functionality: Provides a search feature to find notes based on titles and     subtitles.
+- FireBase Database: Utilizes the Room persistence library for Stor Student Information.
+- Responsive Desing With Third Party Laibrery.
 - Responsive UI: Designed with responsive UI elements, including a StaggeredGridLayoutManager for a visually appealing layout.
-- Light/dark mode customised based on your phone them.
+- Light/dark mode customized based on your phone them.
   
 ### Technologies Used
 
 We've embraced modern technologies to make this app robust and efficient:
 
-- MVVM and Stateflow.
-- Room Database.
+- Recycler View
+- Card View
+- Google Material Design
+- FireBase Database.
 - View Binding.
 - Navigation components with Safe Args Kotlin-Parcelize.
 - Pagination (manual implementation).
@@ -65,9 +65,6 @@ git clone: https://github.com/Jubayed-A/Computer-Technology-App.git
 - Click on the "Run" button in Android Studio to build and run the application.
   
 ### Dependencies
-- Android Architecture Components: Using LiveData and ViewModel for efficient UI updates and maintaining UI-related data.
-
-- Room Database: A robust and efficient SQLite object mapping library.
 
 - Navigation Component: Simplifies the implementation of navigation within the app.
 
