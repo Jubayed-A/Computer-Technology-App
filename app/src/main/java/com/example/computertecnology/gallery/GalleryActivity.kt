@@ -15,6 +15,7 @@ class GalleryActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gallery)
 
+        // RecyclerView I'd declaration 
         recyclerView = findViewById(R.id.galleryRecyclerView)
 
         // notice image declare

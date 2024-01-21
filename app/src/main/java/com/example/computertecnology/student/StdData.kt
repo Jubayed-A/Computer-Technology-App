@@ -7,5 +7,4 @@ class StdData(
     val department: String,
     val semester: String,
     val phone: String
-) {
-}
+)
