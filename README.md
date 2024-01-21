@@ -3,7 +3,7 @@
  <h1 style="display: inline-block; margin: 0; vertical-align: middle;">Computer Technology</h1>  
 </div>  
 
-Welcome to the Computer Technology, This is a simple Android application for taking notes, built using the CardView and RecyclerView and FireBase Database.
+Welcome to Computer Technology, This is a simple Android application for taking notes, built using the CardView and RecyclerView and FireBase Database.
 
 **APK: https://github.com/Jubayed-A/Computer-Technology-App/releases/download/v.1.5/Computer.Department.apk** 
 
