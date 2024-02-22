@@ -60,7 +60,7 @@ git clone: https://github.com/Jubayed-A/Computer-Technology-App.git
 2. Open in Android Studio:
 - Open Android Studio and choose "Open an existing Android Studio project."
 - Navigate to the cloned project directory and select it.
-3. Run the App:
+3. Run the App: 
 - Connect your Android device or use an emulator.
 - Click on the "Run" button in Android Studio to build and run the application.
   
